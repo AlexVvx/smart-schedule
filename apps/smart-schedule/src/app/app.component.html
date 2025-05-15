@@ -1,2 +1,5 @@
-<app-nx-welcome></app-nx-welcome>
+<full-calendar
+  [options]="calendarOptions"
+  [events]="events$ | async"
+></full-calendar>
 <router-outlet></router-outlet>
